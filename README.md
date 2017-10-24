@@ -34,6 +34,6 @@ $ npm test
 
 ## Notes
 
-1. The basic structure of the application is build on top of lastest version of React, Redux and thunk. The whole app is built using a fractal structure which means each route has its own components and containers under its own folder. With fractal structure routes can be bundled into 'chunks' using webpack if needed. Route reducer can be lazy loaded into store when needed. However, it is not the case for this small project.
-2. Testing should be fully covered if there is more time and css style should be more details.
-3. Same
+1. The basic structure of the application is built on top of React, Redux and thunk. The whole app is built using a fractal structure which means each route has its own components and containers under its own folder. With fractal structure routes can be bundled into 'chunks' using webpack if needed. Route reducer can be lazy loaded into store when needed. However, it is not the case for this small project.
+2. Testing should be fully covered and css style should be more details if there is more time.
+3. To stimulate network fetch failure there is a random boolen to decide if data fetching success or not. Please refresh the movie/series pages to see different results.
