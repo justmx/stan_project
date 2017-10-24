@@ -7,7 +7,7 @@ import '../styles/TitleComponent.scss'
 
 const TitleComponent = ({ title }) => (
   <div id='title-component'>
-    <div className='image'> <span className='main_title pull-right'>{title}</span></div>
+    <div className='title-image'><span className='main_title pull-right'>{title}</span></div>
     <div><span className='title'>Popular {title}</span></div>
   </div>
 )

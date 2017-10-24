@@ -7,6 +7,7 @@ import { Link } from 'react-router'
 import '../../../styles/HomeView.scss'
 import TitleBar from '../../../components/TitleBar'
 import TitleComponent from '../../../components/TitleComponent'
+
 export const HomeView = () => {
   return (
     <div id='home'>

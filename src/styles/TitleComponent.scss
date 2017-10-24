@@ -3,19 +3,21 @@
   margin-top: 20px;
   margin-bottom: 20px;
   .main_title {
-    color: white;
-    font-size: 25px;
-    margin-top: 90px;
-    margin-right: 12px;
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
   }
 
-  .image {
-    width: 158px;
+  .title-image {
+    width: 160px;
     height: 250px;
-    background-image: url('../assets/movie.png');
+    background-image: url('../assets/film.png');
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   .title {
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     font-weight: 600;
   }
