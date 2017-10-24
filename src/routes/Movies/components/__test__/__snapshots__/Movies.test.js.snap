@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Movies component renders EntityComponent if entries not empty 1`] = `
+<div
+  className=""
+  id="movie"
+>
+  <TitleBar
+    title="Popular Movies"
+  />
+  <section>
+    <Grid
+      bsClass="container"
+      componentClass="div"
+      fluid={false}
+    >
+      <div
+        id="entity_view"
+      >
+        <EntityComponent
+          title="A Lego Brickumentary"
+          url="https://streamcoimg-a.akamaihd.net/000/109/8345/1098345-PosterArt-f0f207e02947ca76d9f9b238aea54dc1.jpg"
+        />
+        <EntityComponent
+          title="American Sniper"
+          url="https://streamcoimg-a.akamaihd.net/000/952/708/952708-PosterArt-d3beb37b66819c3f6281d7accc3020d6.jpg"
+        />
+        <EntityComponent
+          title="Ernest & Celestine"
+          url="https://streamcoimg-a.akamaihd.net/000/928/838/928838-PosterArt-c3d8ac708b712062e519a3b106469595.jpg"
+        />
+        <EntityComponent
+          title="Jenny's Wedding"
+          url="https://streamcoimg-a.akamaihd.net/000/103/5939/1035939-PosterArt-8513e9e2dcfc6845adbd6d1fdd1a5f5f.jpg"
+        />
+        <EntityComponent
+          title="John Wick"
+          url="https://streamcoimg-a.akamaihd.net/000/376/201/376201-PosterArt-4f91ac739ae5147a51ae3abc78d55f2d.jpg"
+        />
+        <EntityComponent
+          title="Life of Crime"
+          url="https://streamcoimg-a.akamaihd.net/000/118/0648/1180648-PosterArt-80d56bbb6635cff7a49ad2287711c378.jpg"
+        />
+        <EntityComponent
+          title="Mad Max: Fury Road"
+          url="https://streamcoimg-a.akamaihd.net/000/958/725/958725-PosterArt-96c5bbb6e15269f5b5cd9bc7801de1d9.jpg"
+        />
+        <EntityComponent
+          title="Paper Planes"
+          url="https://streamcoimg-a.akamaihd.net/000/376/206/376206-PosterArt-fc212c3beeab2c066977541a2312d732.jpg"
+        />
+        <EntityComponent
+          title="San Andreas"
+          url="https://streamcoimg-a.akamaihd.net/000/958/726/958726-PosterArt-46061b8e3d5b4c8fd690d045ee524d0f.jpg"
+        />
+        <EntityComponent
+          title="Self/less"
+          url="https://streamcoimg-a.akamaihd.net/000/103/5943/1035943-PosterArt-24bf05e844865af039feafa36f0a87bd.jpg"
+        />
+        <EntityComponent
+          title="Sicario"
+          url="https://streamcoimg-a.akamaihd.net/000/105/3102/1053102-PosterArt-54c83e37dfc1500b61ac3f37b3e062a4.jpg"
+        />
+        <EntityComponent
+          title="Spooks: The Greater Good"
+          url="https://streamcoimg-a.akamaihd.net/000/119/3835/1193835-PosterArt-faaba78b86d44c352d258d7189d485f6.jpg"
+        />
+        <EntityComponent
+          title="The Best of Me"
+          url="https://streamcoimg-a.akamaihd.net/000/376/200/376200-PosterArt-0d02eaf47c7a9b050909420eb81ff569.jpg"
+        />
+        <EntityComponent
+          title="The Hunger Games"
+          url="https://streamcoimg-a.akamaihd.net/000/843/787/843787-PosterArt-dafc8872838e5d0f806c895b62134021.jpg"
+        />
+        <EntityComponent
+          title="The Hunger Games: Catching Fire"
+          url="https://streamcoimg-a.akamaihd.net/000/843/788/843788-PosterArt-b4e53eeb7e3e560a93c4033f3c791945.jpg"
+        />
+        <EntityComponent
+          title="The Hunger Games: Mockingjay - Part 1"
+          url="https://streamcoimg-a.akamaihd.net/000/376/199/376199-PosterArt-0929f0c32637703dc8ba857e81154bc9.jpg"
+        />
+        <EntityComponent
+          title="The Hunger Games: Mockingjay - Part 2"
+          url="https://streamcoimg-a.akamaihd.net/000/109/8333/1098333-PosterArt-c72002fd42ec6f2cfc53004a59b432be.jpg"
+        />
+        <EntityComponent
+          title="Troll Hunter"
+          url="https://streamcoimg-a.akamaihd.net/000/393/966/393966-PosterArt-72da04b296c0796a20540205eaa4fce0.jpg"
+        />
+        <EntityComponent
+          title="U2: Live in Paris"
+          url="https://streamcoimg-a.akamaihd.net/000/963/194/963194-PosterArt-9d1f4f28bb94e5e0f06e83d1216a8e30.jpg"
+        />
+        <EntityComponent
+          title="Under The Gun"
+          url="https://streamcoimg-a.akamaihd.net/000/115/3873/1153873-PosterArt-93b3333a696042bf7da06b874af771d8.jpg"
+        />
+        <EntityComponent
+          title="Victoria "
+          url="https://streamcoimg-a.akamaihd.net/000/119/2937/1192937-PosterArt-2f0c0a5bfaec9ce6e2662283f9c660b2.jpg"
+        />
+      </div>
+    </Grid>
+  </section>
+</div>
+`;
+
+exports[`Testing Movies component renders error message if there is error 1`] = `
+<div
+  className=""
+  id="movie"
+>
+  <TitleBar
+    title="Popular Movies"
+  />
+  <section>
+    <Grid
+      bsClass="container"
+      componentClass="div"
+      fluid={false}
+    >
+      <Row
+        bsClass="row"
+        componentClass="div"
+      >
+        <span
+          className="message"
+        >
+          Opps. Something went wrong...
+        </span>
+      </Row>
+    </Grid>
+  </section>
+</div>
+`;
+
+exports[`Testing Movies component renders loading message if isLoading is true 1`] = `
+<div
+  className=""
+  id="movie"
+>
+  <TitleBar
+    title="Popular Movies"
+  />
+  <section>
+    <Grid
+      bsClass="container"
+      componentClass="div"
+      fluid={false}
+    >
+      <Row
+        bsClass="row"
+        componentClass="div"
+      >
+        <span
+          className="message"
+        >
+          isLoading...
+        </span>
+      </Row>
+    </Grid>
+  </section>
+</div>
+`;

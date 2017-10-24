@@ -52,7 +52,7 @@ const ACTION_HANDLERS = {
 const initialState = {
   isLoading: false,
   entries: [],
-  error: ''
+  error: null
 }
 
 export default function fileReducer (state = initialState, action) {
