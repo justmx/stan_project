@@ -7,7 +7,7 @@ import '../styles/EntityComponent.scss'
 
 const EntityComponent = ({ url, title }) => (
   <div id='title-component'>
-    <img src={url} className='image'/>
+    <img src={url || require('../assets/film.png')} className='image'/>
     <div><span className='title'>{title}</span></div>
   </div>
 )
