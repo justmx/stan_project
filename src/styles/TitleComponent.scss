@@ -1,0 +1,22 @@
+#title-component {
+  margin-right: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .main_title {
+    color: white;
+    font-size: 25px;
+    margin-top: 90px;
+    margin-right: 12px;
+  }
+
+  .image {
+    width: 158px;
+    height: 250px;
+    background-image: url('../assets/movie.png');
+  }
+  .title {
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+  }
+}
