@@ -1,0 +1,58 @@
+@import 'variables';
+
+.navbar-container {
+  background-color: #1681fa;
+
+  #icon {
+    text-decoration: none;
+  }
+
+  a {
+      color: $text-grey;
+      &:hover {
+        color: $red;
+      }
+    }
+
+  @include xs {
+    .logo {
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+    .login-section {
+      margin-left: 65px;
+      margin-top: 10px;
+      margin-bottom:10px;
+    }
+  }
+
+  @include sm-greater {
+    .logo {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .login-section {
+      margin-top: 30px;
+    }
+  }
+
+  .demo {
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px $text-grey;
+  }
+  .free-try {
+    background-color: #404040;
+    color: $white;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .login {
+    margin-right: 20px;
+    color: $white;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}

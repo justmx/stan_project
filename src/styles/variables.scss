@@ -1,0 +1,77 @@
+// Brand colours
+$red: #f16365;
+$blue: #9bc2e2;
+$grey-background: #404040;
+$text-grey: #656565;
+$light-grey: #818182;
+$label-blue: #33bcf4;
+$white: #fff;
+
+// Responsive widths
+$xs-max: 575px;
+$sm-min: 576px;
+$sm-max: 991px;
+$md-min: 992px;
+$md-max: 1199px;
+$lg-min: 1200px;
+
+// Responsive media query mixins
+@mixin xs {
+  @media (max-width: #{$xs-max}) {
+    @content
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{$sm-min}) and (max-width: #{$sm-max}) {
+    @content
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$md-min}) and (max-width: #{$md-max}) {
+    @content
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$lg-min}) {
+    @content;
+  }
+}
+
+@mixin sm-greater {
+  @media (min-width: #{$sm-min}) {
+    @content;
+  }
+}
+
+@mixin md-greater {
+  @media (min-width: #{$md-min}) {
+    @content;
+  }
+}
+
+// Mixins
+@mixin banner($banner-url) {
+  .banner {
+    background: url($banner-url) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@mixin testimonial($background-url) {
+  .testimonial {
+    background: url($background-url) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@mixin bg-fade($img-url) {
+  @include sm-greater {
+      padding-bottom: 300px;
+      background: url($img-url) no-repeat;
+      background-size: 100%;
+      background-position: left 50% bottom 0%;
+  }
+}
