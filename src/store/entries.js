@@ -7,13 +7,19 @@ export const RECEIVE_ENTRIES_SUCCESS = 'RECEIVE_ENTRIES_SUCCESS'
 export const RECEIVE_ENTRIES_FAILURE = 'RECEIVE_ENTRIES_FAILURE'
 export const CLEAR_ENTRIES = 'CLEAR_ENTRIES'
 
-export const getEntries = () => {
+export const getEntries = (success) => {
   return (dispatch) => {
     dispatch({ type: GET_ENTRIES })
       setTimeout(() => {
-        const entries = data['entries']
-        dispatch({ type: RECEIVE_ENTRIES_SUCCESS, entries: entries })
-      }, 3000)
+        // get a random result to stimulate network fetch
+        const random_boolean = Math.random() >= 0.5
+        if(!random_boolean){
+          const entries = data['entries']
+          dispatch({ type: RECEIVE_ENTRIES_SUCCESS, entries: entries })
+        } else {
+          dispatch({ type: RECEIVE_ENTRIES_FAILURE, error: {error: 'Loading Failure'}})
+        }
+      }, 2000)
   }
 }
 
